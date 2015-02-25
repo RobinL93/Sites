@@ -14,6 +14,9 @@ body, html {
 	width: 100%;
 	height: 100%;
 	background-color: #333;
+	/* 	THIS PICTUES IS BORROWED FROM http://www.tripsniffer.com.br/
+		I'm just trying to create a website from a design layout i saw in Pinterest.
+		I'm not going to publish and use this website, just making some fun and creating website from designs. */
 	background: url("../images/backimgpage1.jpg");
 	min-height: 100%;
 	-webkit-background-size: cover;
