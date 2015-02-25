@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+/* ============= PAGE 1 ============= */
+
+#page1 {
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	background: url("../images/backimgpage1.jpg");
+	min-height: 100%;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+#headerPage1 {
+	background-color: #E84318;
+	width: 100%;
+	height: 70px;
+}
+
+#keepMeUpdated {
+	height: 50px;
+	width: 30%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	padding: 15px;
+	left: 50%;
+	margin-left: -15%;
+	background-color: #000; 
+	opacity: 0.75;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+#keepForm {
+	margin-top: 0.5%;
+	text-align: center;
+	opacity: 1.00;
+}
+
+
+#keepMeUpdatedInput {
+	width: 75%;
+	height: 30px;
+	border: 5px solid white;
+}
+
+#keepMeUpdatedButton {
+	height: 40px;
+	width: 20%;
+	background-color: #E83A2F;
+	border: 0;
+}
+
+
+
+/* ============= PAGE 2 ============= */
+#page2 {
+	width: 100%;
+	height: 100%;
+	background-color: #e50e25;
+}
+
+
