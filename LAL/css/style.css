@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+#page-3 {
+	font-family: Oswald;
+	height: 100%;
+	width: 100%;
+}
+
+#page-3-side-1 {
+	width: 100%;
+	height: 50%;
+	background-color: #e84e40;
+}
+
+#page-3-side-2 {
+	width: 100%;
+	height: 50%;
+	background-color: #607d8b;
+}
+
+/* CONTENT FIRST HALF PAGE 3*/
+#page-3-side-1-content {
+
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+#page-3-content-1 {
+	float: left;
+	border: 1px solid green;
+	color: white;
+	width: 25%;
+	height: 50%;
+	margin-top: 100px;
+	margin-left: 150px;
+}
+
+#page-3-content-1 h1 {
+	margin-bottom: 30px;
+}
+
+#page-3-content-1 p {
+	margin-bottom: 30px;
+}
+
+#page-3-content-2 {
+
+	float: left;
+	border: 1px solid blue;
+	height: 50%;
+	width: 50%;
+	margin-top: 100px;
+	margin-left: 100px;
+
+}
+
+#page-3-content-2 input {
+	color: white;
+	height: 30px;
+	width: 250px;
+	background: transparent;
+	margin: 5px;
+	padding-left: 15px; 
+}
+
+
+/* END ONTENT FIRST HALF PAGE 3*/
+
+

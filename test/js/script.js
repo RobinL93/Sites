@@ -1,8 +1,14 @@
-$(function () {
-	updateLog();
-});
+$(document).ready(function() {
 
-function updateLog() {
-	$("#log").append("This is haxxxx This is haxxxx This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxx  This is haxxxxxxxx   <br />");
-	setTimeout("updateLog();", 4102300);
-}
+	$("a").click(function(event) {
+
+		event.preventDefault();
+
+		$(this).hide("slow");
+
+	});
+
+
+
+
+});
