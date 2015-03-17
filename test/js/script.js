@@ -1,14 +1,7 @@
-$(document).ready(function() {
+var msg = "Sign up to receive our newsletter for 10% off!";
+function updateMessage() {
+	var el = document.getElementById("message");
+	el.textContent = msg;
+}
 
-	$("a").click(function(event) {
-
-		event.preventDefault();
-
-		$(this).hide("slow");
-
-	});
-
-
-
-
-});
+updateMessage();
