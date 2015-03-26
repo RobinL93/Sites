@@ -90,6 +90,10 @@ p, h1, h2, h3, h4, h5, h5, input {
    	box-sizing: border-box;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
 #lUsername {
    	background: url(../images/blue-user-icon32.png) no-repeat scroll 10px 20px;
 }
@@ -120,5 +124,7 @@ p, h1, h2, h3, h4, h5, h5, input {
 }
 
 #login_userInfoSideForm .lLoginButton:hover {
-	background-color: #003366;
+	background-color: #006699;
+	color: white;
 }
+
