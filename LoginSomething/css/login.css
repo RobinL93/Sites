@@ -118,3 +118,7 @@ p, h1, h2, h3, h4, h5, h5, input {
 	border-bottom-right-radius: 20px;
 	font-size: 24pt
 }
+
+#login_userInfoSideForm .lLoginButton:hover {
+	background-color: #003366;
+}
