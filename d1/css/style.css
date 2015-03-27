@@ -1,0 +1,171 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+/* PAGE 1 */
+#containerP1 {
+	width: 100%;
+	height: 100%;
+	background: url("../images/bakgrund1.jpg") no-repeat center center; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+#leftSideP1 {
+	float: left;
+	width: 40%;
+	height: 100%;
+	background-color: #333;
+	opacity:.6;
+}
+
+#leftSideMenuP1 {
+	position: relative;
+	float: right;
+	top: 40%;
+}
+
+#leftSideMenuP1 ul{
+	list-style: none;
+}
+
+#leftSideMenuP1 ul li{
+	color: white;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+#leftSideMenuP1 ul li a{
+	color: white;
+	text-decoration: none;
+	font-family: "Montserrat";
+	font-size: 20pt;
+}
+
+#leftSideMenuP1 ul li a:hover {
+	color: #006699;
+}
+
+#rightSideP1 {
+	float: left;
+	width: 60%;
+	height: 100%;
+}
+
+#rightSideInfoHolderP1 {
+	position: relative;
+	float: left;
+	top: 38%;
+	margin-left: 70px;
+}
+
+#textHolderP1 h1 {
+	color: white;
+	font-family: "Montserrat";
+	font-size: 60pt;
+}
+
+#getInTouch input {
+	width: 200px;
+	height: 50px;
+	background-color: #333;
+	opacity: .8;
+	font-family: "Montserrat";
+	color: white;
+	border: 1px solid white;
+	margin-left: 5px;
+}
+
+#getInTouch input:hover {
+	background-color: #006699;
+}
+/* END PAGE 1*/
+
+
+/* PAGE 2*/
+#containerP2 {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+#wrapperP2 {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+#aboutP2 {
+	float: left;
+	width: 30%;
+	height: 100%;
+	margin-left: 10%;
+}
+
+#aboutP2 h1 {
+	margin-top: 50px;
+	font-family: "Montserrat";
+	color: #A0A8A0;
+}
+
+#aboutPhotoP2 {
+	height: 60%;
+	background-color: #551133;
+	margin-top: 20px;
+}
+
+#aboutTextPhotoP2 {
+	background-color: #333;
+	height: 28.6%;
+}
+
+#aboutTextPhotoP2 p {
+	font-family: "Montserrat";
+	font-style:italic;
+	font-size: 14pt;
+	color: white;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+}
+
+#aboutInfoP2 {
+	float: left;
+	background-color: #606860;
+	width: 20%;
+	height: 100%;
+}
+
+#aboutInfoP2 h3 {
+	margin-top: 100px;
+	color: white;
+	font-family: "Montserrat";
+	font-size: 16pt;
+	padding: 6px;
+}
+
+#aboutInfoP2 p {
+	color: #333;
+	font-family: "Montserrat";
+	padding: 6px;
+}
+
+#aboutTopicsP2 {
+	float: left;
+	background-color: #FFF8E0;
+	width: 40%;
+	height: 100%;
+}
+
+
+/* END PAGE 2*/
