@@ -1,7 +1,11 @@
-var msg = "Sign up to receive our newsletter for 10% off!";
-function updateMessage() {
-	var el = document.getElementById("message");
-	el.textContent = msg;
-}
+$(function () {
 
-updateMessage();
+	var area = calcArea(120);
+
+	$(".output").append(area);
+
+});
+
+function calcArea(x) {
+	return x * x;
+}
