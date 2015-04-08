@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	float: left;
+	width: 100%;
+	height: 500px;
+}
+
+#one {
+	background-color: #006699;
+}
+
+#one:hover {
+	background-color: #0099CC;
+}
+
+#two {
+	background-color: #AA66CC;
+}
+
+#three {
+	background-color: #FF8800;
+}
+
+#four {
+	background-color: #CC0000;
+}
+
+#five {
+	background-color: #FF9A8C;
+}
+#six {
+	background-color: #40FFA1;
+}
+#seven {
+	background-color: #5C98FF;
+}
+#eight {
+	background-color: #09B25F;
+}
+
+@media screen and (min-width: 960px) {
+	.box {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.box {
+		width: 33.3333%;
+	}
+}
