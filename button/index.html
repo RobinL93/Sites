@@ -2,16 +2,29 @@
 <html>
 <head>
 	<title>Button</title>
-	<link rel="stylesheet"  href="css/button.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/button.css">
 </head>
 <body>
 
 <div id="buttonHolder">
 	<!-- Set value name to language key name-->
-	<input type="button" value="Logga in">
-	<input type="button" value="Registrera">
-	<input type="button" value="Avbryt">
-	<input type="button" value="Skicka">
+
+	<div class="button" id="login">
+		Logga in
+		<i id="openMenuIcon" class="fa fa-sign-in"></i>
+	</div>
+
+	<div class="button" id="menu">
+		Meny
+		<i id="openMenuIcon" class="fa fa-align-justify"></i>
+	</div>
+
+	<div class="button" id="home">
+		Hem
+		<i id="openMenuIcon" class="fa fa-home"></i>
+	</div>
+
 
 </div>
 </body>
