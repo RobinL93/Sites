@@ -7,10 +7,27 @@ body {
 	background-color: #333;
 }
 
-#hello-text {
-	background-color: white;
-	width: 170px;
-	padding: 10px;
-	margin: 10% auto 0;
-	color: #333;
+#box {
+	background: white;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#HomeMenu {
+	list-style: none;
+	text-align: center;
+}
+
+#HomeMenu li {
+	display: inline-block;
+	width: 120px;
+	height: 70px;
+	text-align: center;
+	background-color: darkcyan;
+	
+}
+
+#HomeMenu li:hover { 
+	background-color: darkblue;
 }
