@@ -146,6 +146,7 @@ h3 {
 	font-family: "Oswald", sans-serif;
 	font-size: 1.125rem;
 	cursor: pointer;
+	margin-bottom: 20px;
 }
 
 .read-more:hover {
