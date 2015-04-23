@@ -22,7 +22,6 @@
 ul li {
     display: inline-block;
     border: 1px solid #808080;
-    border-radius:5px;
 }
 
 ul li a {
@@ -30,5 +29,10 @@ ul li a {
 	display: inline-block;
 	text-decoration: none;
 	color: black;
+}
+
+ul li a:hover {
+	background-color: #006699;
+	color: white;
 }
 
