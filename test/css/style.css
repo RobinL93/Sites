@@ -11,31 +11,24 @@
 	max-width: 960px;
 	height: 700px;
 	margin: 0 auto;
-	color: seagreen;
 }
 
-ul {
+ ul {
 	list-style: none;
 	text-align: center;
+	margin-top: 20px;
 }
-
+        /*This is probably what was causing your miss-alignment*/
 ul li {
-	display: inline-block;
-	text-align: center;
-	border: 1px solid green;
-	font-size: 12pt;
-}
-
-ul li:hover {
-	background-color: #006699;
-}
-
-.space {
-	padding: 10px;
+    display: inline-block;
+    border: 1px solid #808080;
+    border-radius:5px;
 }
 
 ul li a {
+	padding: 10px 50px;
+	display: inline-block;
 	text-decoration: none;
-	color: inherit;	
-	padding: 10px;
+	color: black;
 }
+
