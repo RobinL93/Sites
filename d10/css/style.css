@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+
+.page1 {
+	width: 100%;
+	background-color: #404148;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+.main-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.picz {
+	width: 23%;
+	margin: 1%;
+	height: 250px;
+	float: left;
+}
+
+.picz a img {
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 1300px) {
+	.picz {
+		width: 31.3333%;
+	}
+}
+
+@media (max-width: 960px) {
+	.picz {
+		width: 48%;
+	}
+}
+
+@media (max-width: 540px) {
+	.picz {
+		width: 98%;
+	}
+}
