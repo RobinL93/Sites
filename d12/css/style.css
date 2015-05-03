@@ -1,0 +1,188 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, button {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+.welcome-page {
+	min-height: 100%;
+	width: 100%;
+	background: url('../img/bg1.jpg') no-repeat center;
+	background-size: cover;
+	overflow: auto;
+	position: relative;
+}
+
+.down-arrow {
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+}
+
+
+
+
+/* Header */
+
+.header {
+	width: 100%;
+	padding-bottom: 20px;
+	overflow: auto;
+}
+
+
+
+/* Logo */
+
+#logo {
+	float: left;
+	margin-top: 50px;
+	margin-left: 140px;
+	position: relative;
+	text-shadow: 2px 1px 2px black;
+}
+
+.boldAndGreen{
+	color: seagreen;
+}
+
+
+
+
+/* MENU */
+
+nav {
+	float: right;
+	margin-right: 150px;
+	margin-top: 50px;
+	position: relative;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	border: 2px solid transparent;
+}
+
+nav ul li a.active {
+	border: 2px solid white;
+	border-radius: 20px;
+}
+
+nav ul li a:hover {
+	border: 2px solid seagreen;
+	border-radius: 20px;
+}
+
+
+
+
+/* Welcome text */
+
+.welcome-text {
+	width: 70%;
+	margin: 120px auto;
+	text-align: center;
+	position: relative;
+}
+
+.welcome-text h1 {
+	font-size: 4.3rem;
+	text-shadow: 2px 3px 2px black;
+}
+
+.welcome-text p {
+	margin-top: 25px;
+}
+
+.welcome-text button {
+	background-color: #006699;
+	border: 0;
+	font-size: 1.2rem;
+	padding: 15px;
+	margin-top: 150px;
+	border-radius: 5px;
+}
+
+.welcome-text button:hover {
+	background-color: #005599;
+	cursor: pointer;
+}
+
+
+
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+	#logo {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		margin-top: 12px;
+	}
+
+	nav {
+		width: 100%;
+		margin: 15px 0 0 0;
+	}
+
+	.welcome-text {
+		margin-top: 40px;
+	}
+
+	.welcome-text button {
+		margin-top: 40px;
+	}
+
+	.down-arrow {
+		display: none;
+	}
+
+	nav ul li a:hover {
+		border: 2px solid white;
+		border-radius: 20px;
+	}
+}
+
+@media (max-width: 580px) {
+
+	nav ul li {
+		display: block;
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	nav ul li a:hover {
+		border: 2px solid white;
+		border-radius: 20px;
+	}
+
+}
