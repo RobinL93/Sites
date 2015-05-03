@@ -134,6 +134,7 @@ nav ul li a:hover {
 .welcome-text button:hover {
 	background-color: #005599;
 	cursor: pointer;
+	font-size: 1.3em;
 }
 
 
