@@ -4,55 +4,24 @@
 	box-sizing: border-box;
 }
 
-
-
 #wrapper {
 	border: 1px solid red;
-	max-width: 1260px;
-	height: 700px;
+	max-width: 960px;
+	height: 2700px;
 	margin: 0 auto;
 }
 
- ul {
-	list-style: none;
-	text-align: center;
-	margin-top: 20px;
-}
-        /*This is probably what was causing your miss-alignment*/
-ul li {
-    display: inline-block;
-    border: 1px solid #808080;
+#lolz {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border: 1px solid blue;
 }
 
-ul li a {
-	padding: 10px 50px;
-	display: block;
-	text-decoration: none;
-	color: black;
-}
-
-ul li a:hover {
-	background-color: #006699;
-	color: white;
-}
-
-#logo {
-	position: relative;
-	float: left;
-}
-
-#logo img {
-	max-height: 50px;
-	max-width: 100%;
-}
-
-@media (max-width: 560px) {
-	#logo {
-		width: 100%;
-	}
-
-	ul li {
-		width: 95%;
-		margin: .5%;
-	}
+#maBox {
+	width: 250px;
+	height: 250px;
+	background-color: #333;
+	position: fixed;
+	top: 25%;
 }
