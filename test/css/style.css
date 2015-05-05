@@ -8,7 +8,7 @@
 
 #wrapper {
 	border: 1px solid red;
-	max-width: 960px;
+	max-width: 1260px;
 	height: 700px;
 	margin: 0 auto;
 }
@@ -26,7 +26,7 @@ ul li {
 
 ul li a {
 	padding: 10px 50px;
-	display: inline-block;
+	display: block;
 	text-decoration: none;
 	color: black;
 }
@@ -36,3 +36,23 @@ ul li a:hover {
 	color: white;
 }
 
+#logo {
+	position: relative;
+	float: left;
+}
+
+#logo img {
+	max-height: 50px;
+	max-width: 100%;
+}
+
+@media (max-width: 560px) {
+	#logo {
+		width: 100%;
+	}
+
+	ul li {
+		width: 95%;
+		margin: .5%;
+	}
+}
