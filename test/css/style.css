@@ -4,24 +4,18 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	height: 100%;
+}
+
 #wrapper {
-	border: 1px solid red;
+	background-color: #f0f0f0;
 	max-width: 960px;
-	height: 2700px;
 	margin: 0 auto;
+	min-height: 100%;
+	padding: 50px;
 }
 
-#lolz {
-	width: 300px;
-	height: 300px;
-	margin: 0 auto;
-	border: 1px solid blue;
-}
-
-#maBox {
-	width: 250px;
-	height: 250px;
-	background-color: #333;
-	position: fixed;
-	top: 25%;
+#ajax {
+	margin-top: 100px;
 }

@@ -1,11 +1,12 @@
-$(function () {
+var xhr = new XMLHttpRequest();
 
-	var area = calcArea(120);
-
-	$(".output").append(area);
-
+xhr.onreadystatechange = (function(){
+	if (xhr.readyState === 4) {
+		$("#ajax").html(xhr.responseText);
+	};	
 });
 
-function calcArea(x) {
-	return x * x;
+xhr.open("GET", "myAjax.html");
+function loadAjax() {
+	xhr.send();
 }
