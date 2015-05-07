@@ -3,7 +3,7 @@ var iNbr = 0;
 $(function() {
 	setInterval(function() {
 		iNbr = changeTextYoo();
-	}, 2000);
+	}, 1500);
 });
 
 function changeTextYoo() {
