@@ -1,12 +1,17 @@
-var xhr = new XMLHttpRequest();
+$(document).ready(function(){
 
-xhr.onreadystatechange = (function(){
-	if (xhr.readyState === 4) {
-		$("#ajax").html(xhr.responseText);
-	};	
-});
+	$.ajax({
+		url: 'https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=?',
+		dataType: 'jsonp',
+		success: function(response){
+			$.each(response, function(index, flickr) {
+				console.log(flickr[0].author);
+			});
+		},
+		error: function(){
+			console.log("error");
+		}
 
-xhr.open("GET", "myAjax.html");
-function loadAjax() {
-	xhr.send();
-}
+	}); // end ajax
+
+}); // end ready
