@@ -1,0 +1,22 @@
+div#memory-board {
+	width: 800px;
+	background: #006699;
+	height: 540px;
+	padding: 20px;
+	margin: auto;
+}
+
+div#memory-board > div {
+	background: url('../img/tile_bg.jpg') no-repeat;
+	background-size: 113px;
+	border: #000 1px solid;
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin: 10px;
+	padding: 20px;
+	font-size: 64px;
+	cursor: pointer;
+	text-align: center;
+}
+

@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#page1 header {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background-color: #1a1a1a;
+	margin: 0;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+#page1 header nav {
+	border-bottom: 2px solid #303030;
+	display: inline-block;
+	position: relative;
+}
+
+#page1 header nav #menu {
+	list-style: none;	
+	padding: 0;
+}
+
+#page1 header nav #menu li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#page1 header nav #menu li a {
+	padding: 10px 10px 7px 10px;
+	display: block;
+	color: white;
+	font-family: 'Varela Round', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+}
+
+
+#page1 header nav #menu li a:hover,  #page1 header nav #menu li a.active {
+	color: #54d1a1;
+}
+
+#page1 header nav #menu li a:hover::after, #page1 header nav #menu li a.active::after {
+	content: url("../img/active-dot.png");
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#page1 header .socialMediaContainer {
+	border: 1px solid red;
+	width: 100px;
+	height: 10px;
+	display: inline-block;
+	margin-left: 100px;
+}
