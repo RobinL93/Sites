@@ -17,7 +17,7 @@
 }
 
 #page1 header nav {
-	border-bottom: 2px solid #303030;
+	border-bottom: 2px solid #54d1a1;
 	display: inline-block;
 	position: relative;
 }
@@ -48,19 +48,14 @@
 }
 
 #page1 header nav #menu li a:hover::after, #page1 header nav #menu li a.active::after {
-	content: url("../img/active-dot.png");
+	font-family: FontAwesome;
+	content: "\f0c8";
+	/* content: url("../img/active-dot.png"); */
+	transform: rotate(45deg);
 	position: absolute;
 	top: 30px;
 	left: 0;
 	right: 0;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-#page1 header .socialMediaContainer {
-	border: 1px solid red;
-	width: 100px;
-	height: 10px;
-	display: inline-block;
-	margin-left: 100px;
 }
