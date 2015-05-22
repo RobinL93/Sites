@@ -1,0 +1,8 @@
+Colors:
+ #01C8FF	// ljusblå
+ #01B3E3	// mörkare blå
+ #6D5C88	// mörkare lila
+ #806F9B	// lite ljusare lila
+ 
+
+
