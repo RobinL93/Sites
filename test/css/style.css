@@ -11,6 +11,10 @@ body {
 	background: #f2f2f2;
 }
 
+a {
+	color: black;
+}
+
 #wrapper {
 	background-color: white;
 	max-width: 960px;
@@ -24,9 +28,75 @@ body {
 	box-shadow: 0px 4px 5px 0px #B9B9BF;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 table, th, td {
    border: 1px solid black;
    padding: 2px;
 }
 
+.table {	
+	width: 100%;
+	margin-top: 15px;
+	border: 1px solid black;
+	padding: 2px;	
+}
 
+.tr {
+	padding: 1px;
+}
+
+.td {
+	padding: 0;	
+	display: inline-block;
+	margin-right: 2px;
+}
+
+.toRight {
+	float: right;
+}
+
+.td {
+	border: 1px solid black;
+}
+
+.url {
+	width: 50%;
+}
+
+.td::after {
+	clear: both;
+	display: table;
+	content: "";
+}
+
+
+*/
