@@ -100,6 +100,7 @@ html, body {
 	color: white;
 	opacity: .9;
 	font-family: 'Varela Round', FontAwesome;
+	outline: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -135,14 +136,18 @@ html, body {
 .topics .topic {
 	display: block;
 	border-bottom: 1px solid rgba(0, 0, 0, .5);
+	cursor: pointer;
 }
 
 .topics .topic .topic-icon {
 	background-color: rgba(0, 0, 0, .2);
 	display: inline-block;
 	padding: 40px;
+	width: 30%;
 	font-size: 1.8em;
 	float: left;
+	color: white;
+	border-right: 1px solid rgba(0, 0, 0, .5);
 }
 
 .topics .topic .topic-text {
@@ -151,6 +156,13 @@ html, body {
 	line-height: 1.8;
 	float: left;
 	color: white;
+}
+
+.topics .topic:hover .topic-icon,
+.topics .topic:hover 
+{
+	background-color: #006699;
+	color: #f2f2f2;
 }
 
 
@@ -204,13 +216,20 @@ html, body {
 }
 
 .post {
-	width: 45%;
-	margin: 2.5%;
+	width: 48%;
+	margin: 1%;
 	background: white;
 	padding: 15px;
 	float: left;
 	border-radius: 10px;
 	color: gray;
+	-webkit-box-shadow: 0px 3px 11px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 11px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 11px 1px rgba(0,0,0,0.75);
+}
+
+.post:nth-child(even) {
+	float: right;
 }
 
 .post-like-and-comments .fa-heart {
@@ -220,7 +239,6 @@ html, body {
 .post .darker-gray {
 	color: #323232
 }
-
 
 .post .post-title {
 	color: #6D5C88;
@@ -233,5 +251,8 @@ html, body {
 	margin-bottom: 15px;
 }
 
+.post-author {
+
+}
 
 /* RIGHT PANEL */
