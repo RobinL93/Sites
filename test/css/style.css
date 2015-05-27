@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Varela Round";
+	font-family: "Varela Round", FontAwesome;
 }
 
 body {
@@ -12,8 +12,10 @@ body {
 }
 
 a {
-	color: black;
+	color: white;
 }
+
+/*
 
 #wrapper {
 	background-color: white;
@@ -28,12 +30,70 @@ a {
 	box-shadow: 0px 4px 5px 0px #B9B9BF;
 }
 
+*/
+
+#menu {
+	list-style: none;
+}
+
+#menu li {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+#menu li a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	display: block;
+	padding: 25px;
+}
+
+#menu li a:hover {
+	background-color: #2E8B57;
+}
+
+#menu li a:hover .fa {
+	color: #ff9900;
+}
+
+.fa {
+	width: 25px;
+}
 
 
 
+#header {
+	text-align: center;
+	width: 100%;
+	background-color: #006699;
+}
 
+@media (max-width: 1080px) {
+	#header {
+		text-align: left;
+	}
 
+	#menu li {
+		margin-right: 5px;
+	}
 
+	#menu li a {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 600px){
+	#menu li {
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid gray;
+	}
+
+	#menu li:last-child {
+		border-bottom: 0;
+	}
+
+}
 
 
 
