@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+html, body {
+	height: 100%;
+}
+
+#intro-page {
+	height: 100%;
+	background-color: #FF9900;
+	background: url("../img/bg1.jpg");
+	background-size: cover;
+}
+
+#header {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+	padding: 25px;
+}
+
+#header::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#logo {
+	float: left;
+	margin-left: 350px;
+	display: block;	
+	width: 144px;
+}
+
+#logo img {
+	max-width: 100%;
+}
+
+#menu {
+	float: right;
+	list-style: none;
+	margin-right: 300px;
+}
+
+#menu li {
+	display: inline-block;
+	margin: 10px;
+}
+
+#menu li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: .875rem;
+	text-transform: uppercase;
+}
+
+#menu li a:hover {
+	color: #f44a4f;
+	border-bottom: 1px solid #f44a4f;
+}
+
+#welcome-text {
+	text-align: center;
+	margin: 300px auto;
+	color: white;
+}
+
+#welcome-text h1 {
+	font-size: 7.3rem;
+}
+
+#welcome-text p {
+	color: #f44a4f;
+	font-size: 1.3rem;
+	text-shadow: 3px 2px 3px rgba(0, 0, 0, 1);
+	letter-spacing: 3px;
+}
+
+#welcome-text .andSign {
+	text-shadow: 2px 3px 15px rgba(244, 74, 9, 1);
+	font-size: 2.6rem;
+}

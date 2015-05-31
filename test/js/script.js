@@ -1,17 +1,9 @@
-$(document).ready(function(){
+$(function(){
 
-	$.ajax({
-		url: 'https://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=?',
-		dataType: 'jsonp',
-		success: function(response){
-			$.each(response, function(index, flickr) {
-				console.log(flickr[0].author);
-			});
-		},
-		error: function(){
-			console.log("error");
-		}
+	
+	$(document).on("mousemove", function(event){
+		$("#mouseX").text("y: " + event.pageY);
+		$("#mouseY").text("x: " + event.pageX);
+	});
 
-	}); // end ajax
-
-}); // end ready
+});
