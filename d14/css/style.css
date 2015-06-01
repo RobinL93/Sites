@@ -5,6 +5,15 @@
 	margin: 0;
 	padding: 0;
 }
+html, body {
+	height: 100%;
+}
+
+#page1 {
+	background-color: #FF9900;
+	height: 100%;
+	overflow: auto;
+}
 
 #page1 header {
 	position: relative;
@@ -12,14 +21,31 @@
 	text-align: center;
 	background-color: #1a1a1a;
 	margin: 0;
-	padding: 20px;
-	margin-bottom: 10px;
+	padding: 10px;
+	height: 10%;
+}
+
+#page1 header #logo {
+	float: left;
+	width: 144px;
+	display: block;
+	margin-left: 300px;
+}
+
+#page1 header #logo img {
+	max-width: 100%;
 }
 
 #page1 header nav {
-	border-bottom: 2px solid #54d1a1;
+	border-bottom: 2px solid #6C6C6C;
 	display: inline-block;
-	position: relative;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 31%;
 }
 
 #page1 header nav #menu {
@@ -35,7 +61,7 @@
 #page1 header nav #menu li a {
 	padding: 10px 10px 7px 10px;
 	display: block;
-	color: white;
+	color: #6C6C6C;
 	font-family: 'Varela Round', sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -58,4 +84,37 @@
 	right: 0;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+
+#page1 header .social-media-buttonHolder {
+	position: relative;
+	display: inline-block;
+	margin-left: 500px;
+	margin-top: 20px;
+}
+
+#page1 header .social-media-buttonHolder #social-media-ul {
+	list-style: none;
+}
+
+#page1 header .social-media-buttonHolder #social-media-ul li {
+	display: inline-block;
+}
+
+#page1 header .social-media-buttonHolder #social-media-ul li a {
+	color: white;
+	font-size: 1.6rem;
+	letter-spacing: 5px;
+}
+
+#page1 header .social-media-buttonHolder #social-media-ul li a:hover {
+	color: #54d1a1;
+}
+
+#page1 #background-image {
+	height: 90%;
+	width: 100%;
+	background: url("../img/bg2.jpg");
+	background-size: cover;
 }

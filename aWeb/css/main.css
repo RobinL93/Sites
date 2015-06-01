@@ -40,6 +40,11 @@ img {
 	border-bottom: 2px solid #cc0000;
 }
 
+.bottom-menu ul a li:hover {
+	opacity: .7;
+	border-bottom: 2px solid #cc0000;
+}
+
 .bottom-menu ul a li img{
 	max-height: 1.6em;
 	padding-top: 0.15em;
