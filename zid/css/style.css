@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Perfect Dos';
+	src: url('../font/perfectdosvga437.ttf');
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background: #f6f6f6;
+}
+
+h1, h2, h3, h4, h5, h6, p, select, input, span {
+	font-family: 'Perfect Dos';
+}
+
+h1 { font-size: 4rem; 	}
+h2 { font-size: 3.6rem;	}
+h3 { font-size: 3.2rem; }
+h4 { font-size: 2.8rem; }
+h5 { font-size: 2.4rem; }
+h6 { font-size: 2rem; 	}
+p  { font-size: 1.8rem;	}
+
+
+/* Header */
+#header {
+	width: 100%;
+	font-family: 'Perfect Dos';
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #f6f6f6;
+}
+
+#logo {
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#logo img {
+	max-width: 100%;
+}
+
+.menu {
+	border-top: 1px solid black;
+	border-bottom: 3px solid black;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 2px 1px 0px rgba(45, 50, 50, 0.55);
+	-moz-box-shadow:    0px 2px 1px 0px rgba(45, 50, 50, 0.55);
+	box-shadow:         0px 2px 1px 0px rgba(45, 50, 50, 0.55);
+	background-color: white;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu li a {
+	display: block;
+	color: black;
+	font-size: 1.8rem;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+}
+
+.menu li a:hover {
+	background-color: black;
+	color: white;
+}
+
+
+
+
+/* Container */
+
+.container {
+	padding: 10px;
+	width: 80%;
+	margin: 30px auto 0;
+	font-family: 'Perfect Dos';
+	background-color: white;
+	border-top: 2px solid black;
+	border-right: 4px solid black;
+	border-bottom: 4px solid black;
+	border-left: 2px solid black;
+
+	-webkit-box-shadow: 7px 7px 15px -5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    7px 7px 15px -5px rgba(50, 50, 50, 0.75);	
+	box-shadow:         7px 7px 15px -5px rgba(50, 50, 50, 0.75);
+
+}
+
+.container h1, h2, h3, h4, h5, h6 {
+	text-decoration: underline;
+}
+
+
