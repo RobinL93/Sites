@@ -1,7 +1,9 @@
 * {
 	margin: 0;
 	padding: 0;
+	cursor: url('../img/mouse2.png'), auto;
 }
+
 
 @font-face {
 	font-family: 'Perfect Dos';
@@ -16,7 +18,7 @@ body {
 	background: #f6f6f6;
 }
 
-h1, h2, h3, h4, h5, h6, p, select, input, span {
+h1, h2, h3, h4, h5, h6, p, select, input, span, a {
 	font-family: 'Perfect Dos';
 }
 
@@ -29,10 +31,21 @@ h6 { font-size: 2rem; 	}
 p  { font-size: 1.8rem;	}
 
 
+::selection {
+	background: rgba(0, 0, 0, 0.99);
+	color: #FFF;
+}
+::-moz-selection {
+	background: rgba(0, 0, 0, 0.99);
+   	color: #FFF;
+}
+
+
+
+
 /* Header */
 #header {
 	width: 100%;
-	font-family: 'Perfect Dos';
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -87,22 +100,39 @@ p  { font-size: 1.8rem;	}
 .container {
 	padding: 10px;
 	width: 80%;
-	margin: 30px auto 0;
-	font-family: 'Perfect Dos';
+	margin: 30px auto 10px;
 	background-color: white;
 	border-top: 2px solid black;
 	border-right: 4px solid black;
 	border-bottom: 4px solid black;
 	border-left: 2px solid black;
-
 	-webkit-box-shadow: 7px 7px 15px -5px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    7px 7px 15px -5px rgba(50, 50, 50, 0.75);	
 	box-shadow:         7px 7px 15px -5px rgba(50, 50, 50, 0.75);
-
+	overflow: hidden;
 }
 
 .container h1, h2, h3, h4, h5, h6 {
 	text-decoration: underline;
+	cursor: url('../img/curtype.png'), auto;
+	display: inline-block;
+	font-weight:normal;
+
+}
+
+.container p {
+	margin-bottom: 15px;
+	display: inline-block;
+	cursor: url('../img/curtype.png'), auto;
 }
 
 
+
+
+/* Footer */
+#footer {
+	width: 80%;
+	margin: 0 auto 10px;
+	background-color: #FF9900;
+	padding: 10px;
+}
