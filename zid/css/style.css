@@ -112,17 +112,26 @@ p  { font-size: 1.8rem;	}
 	border-right: 3px solid black;
 	-webkit-box-shadow: 7px 7px 15px -5px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    7px 7px 15px -5px rgba(50, 50, 50, 0.75);	
-	box-shadow:         7px 7px 15px -5px rgba(50, 50, 50, 0.75);}
+	box-shadow:         7px 7px 15px -5px rgba(50, 50, 50, 0.75);
+}
+
+
+.menu .sub-menu li:first-child {
+	border-top: none;
+}
 
 .menu .sub-menu li {
 	display: block;
+	border-top: 1px solid black;
 }
+
 
 .menu .sub-menu li a {
 	display: block;
 	padding: 5px;
 	font-size: 1.7rem;
 }
+
 
 
 
@@ -147,8 +156,8 @@ p  { font-size: 1.8rem;	}
 .container h1, h2, h3, h4, h5, h6 {
 	text-decoration: underline;
 	cursor: url('../img/curtype.png'), auto !important;
-	display: inline-block;
-	font-weight:normal;
+	margin-bottom: 10px;
+	font-weight: normal;
 
 }
 
@@ -157,9 +166,6 @@ p  { font-size: 1.8rem;	}
 	display: inline-block;
 	cursor: url('../img/curtype.png'), auto !important;
 }
-
-
-
 
 /* Footer */
 #footer {
@@ -176,4 +182,37 @@ p  { font-size: 1.8rem;	}
 
 .copy-sign-font {
 	font-family: Verdana;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 480px){
+
+	p  { font-size: 1.5rem;	}
+
+	#logo {
+		margin-right: 30px;
+	}
+
+	.menu {
+		white-space: nowrap;
+		overflow-x: scroll;
+	}
+
+	.menu > li a {
+		font-size: 2.5rem;
+	}
+
+	.container {
+		word-break: break-all;
+	}
+
+	::-webkit-scrollbar { 
+	    display: none; 
+	}
+
+
 }

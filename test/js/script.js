@@ -8,7 +8,8 @@ $(function(){
 
 	var obj = {
 		homeObj: new menuObj("Home", "Lorem ipsum superhaxx"),
-		aboutObj: new menuObj("About", "aboout me yo")
+		aboutObj: new menuObj("About", "aboout me yo"),
+		woot: new menuObj("Heheheheheheheheheheehehehehehe", "<i>hmm</i>")
 	}
 
 	var sHtmlCode = "";

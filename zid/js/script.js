@@ -7,7 +7,7 @@ for (var i = 1; i < 6; i++) {
 
 });
 
-$(window).on("load", function(){
+$(window).on("load resize", function(){
 	containerMarginToHeader();
 });
 
