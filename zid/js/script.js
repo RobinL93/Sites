@@ -1,14 +1,17 @@
 $(function(){
 
+for (var i = 1; i < 6; i++) {
+	$('.sub-menu').append('<li><a href="">Game ' + i + '</a></li>');
+};
 
 
 });
 
 $(window).on("load", function(){
-	containerMargin();
+	containerMarginToHeader();
 });
 
-function containerMargin(){
+function containerMarginToHeader(){
 	var height = $("#header").height();
 	$(".container").css("margin-top", ""+ (height + 30) +"px");
 }
