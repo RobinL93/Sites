@@ -1,9 +1,5 @@
 $(function(){
 
-	for (var i = 1; i < 6; i++) {
-		$('.sub-menu').append('<li><a href="">Game ' + i + '</a></li>');
-	};
-
 	if (isAndroidORiOS() != "unknown") {
 		console.log(isAndroidORiOS());
 		$(".sub-menu").remove();
