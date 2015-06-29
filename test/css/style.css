@@ -20,8 +20,16 @@ body {
     border-bottom-right-radius: 10px;
     color: black;
     padding: 10px; 
+    position: relative;
 }
 
-.obj {
-    padding: 20px;
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: seagreen;
+    transition-timing-function: ease-in-out;
+}
+
+#box:hover {
+    background-color: #FF9900;
 }

@@ -175,7 +175,7 @@ html, body {
 	height: 195px;
 	position: fixed;
 	width: inherit;
-	z-index: 10px;
+	z-index: 10;
 	background-color: #f2f2f2;
 }
 
