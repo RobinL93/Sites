@@ -1,5 +1,7 @@
 $(function(){
 
+	menuScrollButtons();
+
 	if (isAndroidORiOS() != "unknown") {
 		console.log(isAndroidORiOS());
 		$(".sub-menu").remove();
@@ -10,8 +12,22 @@ $(function(){
 	}
 
 
+	$(".menu").on("scroll", function(){
+		menuScrollButtons();
+	});
 
+	$("#arrow-right").on("click", function(){
+		var $menuScrollLeft = $(".menu").scrollLeft();
+		var scrollToRight = $menuScrollLeft + 50;
+		$(".menu").scrollLeft(scrollToRight);
+	});
 
+	$("#arrow-left").on("click", function(){
+		var $menuScrollLeft = $(".menu").scrollLeft();
+		var scrollToLeft = $menuScrollLeft - 50;
+		$(".menu").scrollLeft(scrollToLeft);
+	});
+	
 });
 
 $(window).on("load resize", function(){
@@ -36,3 +52,20 @@ function isAndroidORiOS() {
 
 }
 
+function menuScrollButtons(){
+	var $menu = $(".menu");
+	var $lastChild = $(".menu > li.last-child");
+	var rightPosOfLastChild = ($(window).width() - ($lastChild.offset().left + $lastChild.outerWidth()));
+
+	if($menu.scrollLeft() >= 20){
+		$("#arrow-left").show();
+	} else {
+		$("#arrow-left").hide();
+	}
+
+	if(rightPosOfLastChild >= 0){
+		$("#arrow-right").hide();
+	} else {
+		$("#arrow-right").show();
+	}
+}
