@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, arial;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#myCanvas {
+	width: 80%;
+	height: 440px;
+	display: block;
+	background-color: #ddd;
+
+	margin: 0 auto;
+}
+
+#menu {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	padding: 10px;
+	background-color: #006699;
+	display: inline-block;
+	color: #FFF;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+#menu ul li:hover {
+	background-color: #44679F;
+}

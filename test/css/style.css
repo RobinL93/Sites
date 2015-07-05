@@ -24,12 +24,24 @@ body {
 }
 
 #box {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 100px;
     background-color: seagreen;
-    transition-timing-function: ease-in-out;
+    margin: 0 auto;    
+    position: relative;
 }
 
-#box:hover {
-    background-color: #FF9900;
+#box::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -100px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-top: 50px solid transparent;    
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid gold;
 }
