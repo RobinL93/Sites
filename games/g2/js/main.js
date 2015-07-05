@@ -25,6 +25,12 @@ function run(){
 	var goalBoxX = canvas.width - goalBoxWidth - 50;
 	var goalBoxY = canvas.height - (goalBoxHeight + rectHeight);
 
+	var walls = [];
+
+	for(i = 0; i < 3; i++){
+		walls[i] = {x : 0, y: 0};
+	}
+
 
 	document.addEventListener("keydown", keyDownHandler);
 	document.addEventListener("keyup", keyUpHandler);
@@ -58,6 +64,8 @@ function run(){
 		drawRect();
 		drawGoalBox();
 		drawBox();
+		paintWall();
+		collisionDetection();
 
 		if(leftPressed) {
 			boxX -= boxDX;
@@ -123,6 +131,39 @@ function run(){
 		context.fillText("CONGRATULATIONS, YOU WON!", 8, 20);
 	}
 
+	function paintWall(){
+		for(i = 0; i < walls.length; i++){
+			var wallX = 50 * (i + 1);
+			var wallY = 20 * (i + 2);
+			walls[i].x = wallX;
+			walls[i].y = wallY;
+
+			context.beginPath();
+			context.rect(wallX, wallY, 20, 40);
+			context.fillStyle = "#123123";
+			context.fill();
+			context.closePath();
+
+			
+		}
+	}
+
+	function collisionDetection(){
+		for(i = 0; i < walls.length; i++){
+			var w = walls[i];
+
+			if(boxX > w.x - boxWidth){
+				boxDX -= boxDX;
+			} else if(boxX < w.x + 20){
+				boxDX += boxDX;
+			} else if(boxY > w.y - boxHeight){
+				boxDY -= boxDY;
+			} else if(boxY < w.y + 40){
+				//
+			}
+		}
+	}
+
 }
 
 run();
@@ -131,11 +172,9 @@ run();
  $(function(){
  	$("#reload").on("click", function(){
 
- 		$("#myCanvas").remove();
- 		
+ 		$("#myCanvas").remove(); 		
 
  		$('<canvas id="myCanvas"> </canvas>').prependTo('#wrapper');
-
 
  		run();
  	});
