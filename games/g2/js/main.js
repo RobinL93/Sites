@@ -152,15 +152,16 @@ function run(){
 		for(i = 0; i < walls.length; i++){
 			var w = walls[i];
 
-			if(boxX > w.x - boxWidth){
-				boxDX -= boxDX;
-			} else if(boxX < w.x + 20){
-				boxDX += boxDX;
-			} else if(boxY > w.y - boxHeight){
-				boxDY -= boxDY;
-			} else if(boxY < w.y + 40){
-				//
-			}
+			
+			if(boxX > w.x - boxWidth && boxX < w.x + 20 && boxY > w.y - boxHeight && boxY < w.y + 40){
+
+				boxDX = -boxDX;
+				boxDY = -boxDY;
+
+				
+				
+								
+			} 
 		}
 	}
 
