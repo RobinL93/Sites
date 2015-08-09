@@ -1,0 +1,16 @@
+[  
+   {  
+      "id":1,
+      "text":"HEhe node",
+      "children":[  
+         {  
+            "id":2,
+            "text":"Child YA 1"
+         },
+         {  
+            "id":3,
+            "text":"Child node 2"
+         }
+      ]
+   }
+]

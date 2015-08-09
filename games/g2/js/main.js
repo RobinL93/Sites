@@ -154,13 +154,7 @@ function run(){
 
 			
 			if(boxX > w.x - boxWidth && boxX < w.x + 20 && boxY > w.y - boxHeight && boxY < w.y + 40){
-
-				boxDX = -boxDX;
-				boxDY = -boxDY;
-
-				
-				
-								
+				$(walls[i]).remove();					
 			} 
 		}
 	}

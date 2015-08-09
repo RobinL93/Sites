@@ -1,0 +1,48 @@
+[
+   {
+      "text": "Behöver placeras i kategori",
+      "shortName": "Behöver placeras i kategori",
+      "removed": "N",
+      "languageID": 0,
+      "topicGroupID": 0,
+      "subTopics": [ ],
+      "id": 50
+   },
+   {
+      "text": "Flyttas till procydo.com",
+      "shortName": "Flyttas till procydo.com",
+      "removed": "N",
+      "languageID": 0,
+      "topicGroupID": 0,
+      "subTopics": [ ],
+      "id": 49
+   },
+   {
+      "text": "Flyttas till training.procydo.com",
+      "shortName": "Flyttas till training.procydo.com",
+      "removed": "N",
+      "languageID": 0,
+      "topicGroupID": 0,
+      "subTopics": [ ],
+      "id": 52
+   },
+   {
+      "text": "Gamla guider",
+      "shortName": "Gamla guider",
+      "removed": "N",
+      "languageID": 0,
+      "topicGroupID": 0,
+      "children": [
+         {
+            "text": "InfoCaption Guides/Arbetssätt",
+            "shortName": "Arbetssätt",
+            "removed": "N",
+            "languageID": 0,
+            "topicGroupID": 0,
+            "subTopics": [ ],
+            "id": 80
+            }
+      ],
+      "id": 90
+   }
+]
