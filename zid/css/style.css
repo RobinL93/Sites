@@ -12,6 +12,7 @@
 
 html {
 	font-size: 16px;
+	font-family: 'Perfect Dos';
 }
 
 body {
@@ -252,4 +253,8 @@ p  { font-size: 1.8rem;	}
 }
 
 #selectGame {
+}
+
+img {
+	max-width: 100%;
 }

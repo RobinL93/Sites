@@ -3,10 +3,16 @@ function gameObj(title, content){
 	this.content = content;
 }
 
+var game2Content = "<div>";
+	game2Content += 	"<p>This is FIFA 15.</p>"
+	game2Content += 	"<div><img src='img/fifa15-400x200.png'/></div>";
+	game2Content += "</div>";
+
+
+
 var gameObjects = {
 	game1: new gameObj("DXBall", "hmm"),
-
-	game2: new gameObj("FIFA 15", "Lorem ipsum dolor si"),	
+	game2: new gameObj("FIFA 15", game2Content),	
 }
 
 
@@ -31,7 +37,7 @@ $(function(){
 				$(".container").empty();
 				var sHTML = "";
 				sHTML += '<h3>' + value.title + '</h3>';
-				sHTML += '<p>' + value.content +'</p>';
+				sHTML += value.content;
 				$(".container").append(sHTML);
 			}
 
